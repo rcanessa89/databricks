@@ -2,10 +2,10 @@ import * as React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import Grid from '@mui/material/Grid';
 
-import { ContactProvider } from './ContactProvider';
-import { ContactLayout } from './ContactLayout';
-import { ContactForm } from './ContactForm';
-import { ContactInfo } from './ContactInfo';
+import { ContactProvider } from '../modules/contact/ContactProvider';
+import { ContactLayout } from '../modules/contact/ContactLayout';
+import { ContactForm } from '../modules/contact/ContactForm';
+import { ContactInfo } from '../modules/contact/ContactInfo';
 
 const Contact: React.FC<PageProps> = () => (
   <ContactProvider>

@@ -4,9 +4,9 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { useContactContext } from './use-contact-context';
-import { Header } from '../../components/Header';
-import { Main } from '../../components/Main';
-import { Footer, FooterNav } from '../../components/Footer';
+import { Header } from '../../share/Header';
+import { Main } from '../../share/Main';
+import { Footer, FooterNav } from '../../share/Footer';
 
 export const ContactLayout: React.FC<React.PropsWithChildren> = ({
   children

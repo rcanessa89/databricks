@@ -6,8 +6,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
 import { useContactContext } from './use-contact-context';
-import { TextField } from '../../components/TextField';
-import { Select } from '../../components/Select';
+import { TextField } from '../../share/TextField';
+import { Select } from '../../share/Select';
 
 export const ContactForm: React.FC = () => {
   const { form, handleSubmit, emailInputRef } = useContactContext();
@@ -37,9 +37,9 @@ export const ContactForm: React.FC = () => {
           <TextField fullWidth name="name" label="Name" />
           <TextField fullWidth name="phone" label="Phone Number" type="tel" />
           <Select name="help" label="How We Can Help You?">
-            <MenuItem value={1}>Press</MenuItem>
-            <MenuItem value={2}>Support</MenuItem>
-            <MenuItem value={3}>Demo</MenuItem>
+            <MenuItem value="1">Press</MenuItem>
+            <MenuItem value="2">Support</MenuItem>
+            <MenuItem value="3">Demo</MenuItem>
           </Select>
         </Stack>
         <Box display="flex" justifyContent={{ sm: 'flex-end' }}>
