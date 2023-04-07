@@ -18,7 +18,7 @@ export const TextField: React.FC<TextFieldProps> = ({
   const { ref, ...fields } = register(name, {
     ...rules,
     shouldUnregister,
-    value,
+    value
   });
   const id = `TextField-${name}`;
   const error = errors[name] as FieldError;
@@ -28,7 +28,7 @@ export const TextField: React.FC<TextFieldProps> = ({
     error: !!error,
     helperText: error?.message,
     ...fields,
-    ...materialProperties,
+    ...materialProperties
   };
 
   return <MuiTextField {...props} />;

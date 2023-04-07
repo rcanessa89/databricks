@@ -9,12 +9,11 @@ import { FooterNavListProps } from './types';
 
 export const FooterNavList: React.FC<FooterNavListProps> = ({
   title,
-  items,
+  items
 }) => (
   <Stack spacing={2}>
     <Typography
       fontSize="1em"
-      lineHeight={1.2}
       color="#fff"
       fontWeight={500}
       textAlign={{ sm: 'left', xs: 'center' }}
@@ -31,8 +30,8 @@ export const FooterNavList: React.FC<FooterNavListProps> = ({
           sx={(theme) => ({
             [theme.breakpoints.down('sm')]: {
               display: 'block',
-              textAlign: 'center',
-            },
+              textAlign: 'center'
+            }
           })}
         >
           <Link
@@ -41,7 +40,7 @@ export const FooterNavList: React.FC<FooterNavListProps> = ({
             href={link}
             sx={{
               cursor: 'pointer',
-              textDecoration: 'none',
+              textDecoration: 'none'
             }}
           >
             {text}

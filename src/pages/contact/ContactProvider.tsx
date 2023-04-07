@@ -4,7 +4,7 @@ import { ContactContext } from './ContactContext';
 import { useContactForm } from '../../hooks/use-contact-form';
 
 export const ContactProvider: React.FC<React.PropsWithChildren> = ({
-  children,
+  children
 }) => {
   const { form, handleSubmit } = useContactForm((v) => console.log(v));
   const emailInputRef = React.useRef<HTMLInputElement | null>(null);
@@ -18,7 +18,7 @@ export const ContactProvider: React.FC<React.PropsWithChildren> = ({
     emailInputRef,
     form,
     handleSubmit,
-    focusEmailInput,
+    focusEmailInput
   };
 
   return (

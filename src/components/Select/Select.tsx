@@ -7,7 +7,7 @@ import {
   useFormContext,
   useFormState,
   useWatch,
-  type FieldError,
+  type FieldError
 } from 'react-hook-form';
 
 import { type SelectProps } from './types';
@@ -25,7 +25,7 @@ export const Select: React.FC<SelectProps> = ({
   const { errors } = useFormState({ control });
   const value = (useWatch({
     name,
-    control,
+    control
   }) || defaultValue) as string;
   const { ref, ...fields } = register(name, { ...rules, value });
   const error: FieldError = errors[name] as FieldError;
@@ -43,7 +43,7 @@ export const Select: React.FC<SelectProps> = ({
           value,
           fullWidth,
           ...fields,
-          ...materialProperties,
+          ...materialProperties
         }}
       >
         {children}

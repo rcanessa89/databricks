@@ -16,7 +16,7 @@ const validationSchema = z.object({
     .string()
     .min(10, 'Phone number must contain minimum 10 digits')
     .max(14, 'Phone number must contain maximum 10 digits'),
-  help: z.string(),
+  help: z.string()
 });
 
 export const useContactForm = (
@@ -27,14 +27,14 @@ export const useContactForm = (
       email: '',
       name: '',
       phone: '',
-      help: '',
+      help: ''
     },
-    schema: validationSchema,
+    schema: validationSchema
   });
   const handleSubmit = form.handleSubmit(onSubmit);
 
   return {
     form,
-    handleSubmit,
+    handleSubmit
   };
 };

@@ -27,7 +27,7 @@ export const ContactInfo: React.FC = () => (
     <Typography variant="subtitle2" paddingLeft={0.5} mb={1.125}>
       Hours:
     </Typography>
-    <Typography fontSize="1rem" lineHeight={1.2}>
+    <Typography fontSize="1rem">
       Monday - Sunday:{' '}
       <Typography component="span" fontWeight={500}>
         7am - 11pm EST

@@ -14,5 +14,5 @@ export const useForm = <T extends FieldValues = FieldValues, C = any>({
 }: UseFormArgs<T, C>) =>
   RHFuseForm({
     ...(schema ? { resolver: zodResolver(schema) } : {}),
-    ...props,
+    ...props
   });

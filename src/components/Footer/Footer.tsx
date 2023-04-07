@@ -11,12 +11,7 @@ export const Footer: React.FC<FooterProps> = ({ text }) => (
     component="footer"
     sx={{ backgroundColor: 'primary.main' }}
   >
-    <Typography
-      textAlign="center"
-      lineHeight={1.2}
-      color="#fff"
-      fontSize="0.9375rem"
-    >
+    <Typography textAlign="center" color="#fff" fontSize="0.9375rem">
       {text}
     </Typography>
   </Box>

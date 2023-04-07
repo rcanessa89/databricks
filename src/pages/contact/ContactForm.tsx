@@ -23,8 +23,8 @@ export const ContactForm: React.FC = () => {
             padding: 0,
             border: 0,
             [theme.breakpoints.down('md')]: {
-              marginBottom: 4,
-            },
+              marginBottom: 4
+            }
           })}
         >
           <TextField
@@ -55,8 +55,8 @@ export const ContactForm: React.FC = () => {
               fontSize: '1.5625rem',
               textTransform: 'none',
               [theme.breakpoints.down('md')]: {
-                width: '100%',
-              },
+                width: '100%'
+              }
             })}
           >
             Submit

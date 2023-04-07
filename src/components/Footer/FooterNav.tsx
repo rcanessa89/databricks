@@ -12,30 +12,30 @@ import { Arrow } from '../Icons';
 const leftItems = [
   {
     text: 'Azure',
-    link: '/Azure',
+    link: '/Azure'
   },
   {
     text: 'AWS',
-    link: '/AWS',
+    link: '/AWS'
   },
   {
     text: 'Google',
-    link: '/Google',
-  },
+    link: '/Google'
+  }
 ];
 const rightItems = [
   {
     text: 'Terms Of Service',
-    link: '/terms-of-service',
+    link: '/terms-of-service'
   },
   {
     text: 'Privacy Policy',
-    link: '/privacy-policy',
+    link: '/privacy-policy'
   },
   {
     text: 'Support',
-    link: '/support',
-  },
+    link: '/support'
+  }
 ];
 
 export const FooterNav: React.FC<FooterNavProps> = ({ onArrowClick }) => {
@@ -43,7 +43,7 @@ export const FooterNav: React.FC<FooterNavProps> = ({ onArrowClick }) => {
     <Box
       py={{
         md: 12.25,
-        sm: 4,
+        sm: 4
       }}
       sx={{ backgroundColor: 'primary.main' }}
       borderBottom="solid 1px #fff"
@@ -68,7 +68,7 @@ export const FooterNav: React.FC<FooterNavProps> = ({ onArrowClick }) => {
             flexDirection="column"
             alignItems={{
               sm: 'flex-end',
-              xs: 'center',
+              xs: 'center'
             }}
           >
             <IconButton onClick={onArrowClick}>

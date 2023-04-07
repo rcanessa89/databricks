@@ -9,7 +9,7 @@ import { Main } from '../../components/Main';
 import { Footer, FooterNav } from '../../components/Footer';
 
 export const ContactLayout: React.FC<React.PropsWithChildren> = ({
-  children,
+  children
 }) => {
   const { form, focusEmailInput } = useContactContext();
   const { isSubmitSuccessful } = useFormState({ control: form.control });
